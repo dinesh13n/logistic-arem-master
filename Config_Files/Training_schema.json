@@ -1,0 +1,14 @@
+{	"ReadFileName": "AReM-Master.csv",
+	"TrainModelPath": "Training//Model//",
+	"DataDir": "DataSource//Data",
+	"TargetCol": "bending-type",
+	"ModelVer" : "0.1",
+	"exeType" : "Training",
+	"hyperparam" : "True",
+	"classifier" : "LogisticRegression",
+	"LogsRegSolver" : ["newton-cg", "lbfgs", "liblinear", "sag", "saga"],
+	"IndependentCol" : ["avg_rss12","var_rss12","avg_rss13","var_rss13","avg_rss23","var_rss23"],
+	"DatasetColumns" : ["time","avg_rss12","var_rss12","avg_rss13","var_rss13","avg_rss23","var_rss23","bending-type","FileName"],
+	"removecolumn" : ["FileName","time"],
+	"SkipRows" : 4
+}
